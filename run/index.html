@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>เกมวิ่งกระโดดหลบ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+  <h1 class="title">เกมวิ่งกระโดดหลบ (ตัวอย่าง)</h1>
+
+  <div class="game" id="gameContainer">
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+    <div class="hud">
+      <div class="score" id="score">คะแนน: 0</div>
+    </div>
+
+    <div class="controls">
+      <button id="btnJump">กระโดด</button>
+      <button id="btnRestart" class="hidden">เริ่มใหม่</button>
+    </div>
+
+    <div class="overlay">
+      <div class="panel" id="startPanel">
+        <h2>เริ่มเกม</h2>
+        <p>กด Space / คลิก / แตะหน้าจอ เพื่อเริ่ม</p>
+      </div>
+
+      <div class="panel hidden" id="gameOverPanel">
+        <h2>Game Over</h2>
+        <p id="finalScore">คะแนนสุดท้าย: 0</p>
+        <button id="restartBtn2">เล่นอีกครั้ง</button>
+      </div>
+    </div>
+
+    <div class="hint">Space / แตะเพื่อกระโดด</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
